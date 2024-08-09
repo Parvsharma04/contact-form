@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Contact Us</h1>
+      <form>
+        <input
+          type="text"
+          id="name"
+          placeholder="Your Name"
+          required
+        /><br /><br />
+        <textarea
+          id="message"
+          rows="5"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <div>
+          <button type="button" class="call-button" onclick="makeCall()">
+            Call
+          </button>
+          <button type="button" class="mail-button" onclick="sendMail()">
+            Mail
+          </button>
+          <button type="button" class="chat-button" onclick="startChat()">
+            Chat
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
